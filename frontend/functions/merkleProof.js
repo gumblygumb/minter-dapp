@@ -3,6 +3,11 @@ const fetch = require('node-fetch')
 const AUTH = process.env.NFTPORT_API_KEY;
 const include = "merkle_proofs";
 
+let blah = {};
+blah.handler = () => {
+
+}
+
 exports.handler = async (event, context) => {
   const wallet = event.queryStringParameters && event.queryStringParameters.wallet
   const chain = event.queryStringParameters && event.queryStringParameters.chain
